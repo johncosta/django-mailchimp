@@ -5,7 +5,7 @@
 
 {% block breadcrumbs %}{% if not is_popup %}
 <div class="breadcrumbs">
-     <a href="{% url admin:index %}">{% trans "Home" %}</a> &rsaquo;
+     <a href="{#  comment this out b/c its breaking out compression url admin:index #}">{% trans "Home" %}</a> &rsaquo;
      <a href="{% url mailchimp_overview %}">{% trans "mailchimp overview" %}</a> &rsaquo;  
      {{ campaign.mc.subject|truncatewords:18 }}
 </div>
